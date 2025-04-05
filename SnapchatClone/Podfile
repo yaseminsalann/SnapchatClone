@@ -11,6 +11,9 @@ pod 'FirebaseAuth'
 pod 'FirebaseFirestore'
 pod 'FirebaseStorage'
 pod 'FirebaseCore'
+pod 'SDWebImage'
+pod 'ImageSlideshow', '~> 1.8'
+pod "ImageSlideshow/Kingfisher"
 
   target 'SnapchatCloneTests' do
     inherit! :search_paths
