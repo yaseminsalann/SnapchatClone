@@ -65,11 +65,15 @@
 		};
 		B6F5430D2D77D3DB0008622A /* SnapchatCloneTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = SnapchatCloneTests;
 			sourceTree = "<group>";
 		};
 		B6F543172D77D3DB0008622A /* SnapchatCloneUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = SnapchatCloneUITests;
 			sourceTree = "<group>";
 		};
@@ -160,6 +164,7 @@
 				B6F542F12D77D3D90008622A /* Frameworks */,
 				B6F542F22D77D3D90008622A /* Resources */,
 				79E32DD7D2D62C31DE7B7D9E /* [CP] Embed Pods Frameworks */,
+				92BD98BA1EFC70D6257CE19E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -204,6 +209,7 @@
 				B6F543112D77D3DB0008622A /* Frameworks */,
 				B6F543122D77D3DB0008622A /* Resources */,
 				736FA22ECE23880EA66C12BB /* [CP] Embed Pods Frameworks */,
+				55C26ACFE0D8358381EB3F2B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -331,6 +337,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		55C26ACFE0D8358381EB3F2B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnapchatClone-SnapchatCloneUITests/Pods-SnapchatClone-SnapchatCloneUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnapchatClone-SnapchatCloneUITests/Pods-SnapchatClone-SnapchatCloneUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SnapchatClone-SnapchatCloneUITests/Pods-SnapchatClone-SnapchatCloneUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		736FA22ECE23880EA66C12BB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -363,6 +386,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SnapchatClone/Pods-SnapchatClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92BD98BA1EFC70D6257CE19E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnapchatClone/Pods-SnapchatClone-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnapchatClone/Pods-SnapchatClone-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SnapchatClone/Pods-SnapchatClone-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9BB62F2E4200617B8DA9EBDF /* [CP] Check Pods Manifest.lock */ = {

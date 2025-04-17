@@ -9,6 +9,7 @@ import UIKit
 import FirebaseAuth
 import FirebaseFirestoreInternal
 import SDWebImage
+import FirebaseFirestore
 
 class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {    
     @IBOutlet weak var tableView: UITableView!
@@ -103,7 +104,20 @@ func makeAlert(title: String, message: String) {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FeedTableViewCell
         cell.feedUsernameLabel.text = snapArray[indexPath.row].username
-               cell.feedImageView.sd_setImage(with: URL(string: snapArray[indexPath.row].imageUrlArray[0]))
+        cell.feedImageView.sd_setImage(with: URL(string: snapArray[indexPath.row].imageUrlArray[0]))
                return cell
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "toSnapVC" {
+                
+                let destinationVC = segue.destination as! SnapViewController
+                destinationVC.selectedSnap = chosenSnap
+                
+            }
+        }
+        
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            chosenSnap = self.snapArray[indexPath.row]
+            performSegue(withIdentifier: "toSnapVC", sender: nil)
+        }
 }

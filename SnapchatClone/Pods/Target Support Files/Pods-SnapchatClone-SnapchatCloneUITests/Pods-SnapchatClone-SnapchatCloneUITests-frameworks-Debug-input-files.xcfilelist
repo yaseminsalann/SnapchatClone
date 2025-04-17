@@ -1,5 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-SnapchatClone-SnapchatCloneUITests/Pods-SnapchatClone-SnapchatCloneUITests-frameworks.sh
-${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework
 ${BUILT_PRODUCTS_DIR}/FirebaseAppCheckInterop/FirebaseAppCheckInterop.framework
 ${BUILT_PRODUCTS_DIR}/FirebaseAuth/FirebaseAuth.framework
 ${BUILT_PRODUCTS_DIR}/FirebaseAuthInterop/FirebaseAuthInterop.framework
@@ -19,7 +18,5 @@ ${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework
 ${BUILT_PRODUCTS_DIR}/RecaptchaInterop/RecaptchaInterop.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
 ${BUILT_PRODUCTS_DIR}/abseil/absl.framework
-${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework
-${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework
 ${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework
 ${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework
